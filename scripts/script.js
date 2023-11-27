@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('nav-home').addEventListener('click', function () {
-    window.location.href = 'home.html';
+    window.location.href = 'index.html';
   });
 });
 document.addEventListener('DOMContentLoaded', function () {
