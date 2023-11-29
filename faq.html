@@ -58,7 +58,7 @@
             <i class="fa-solid fa-chevron-down text-gray-500"></i>
           </div>
         </div>
-        <div id="content-faq-1" class="mt-4 hidden font-sans font-14">
+        <div id="content-faq-1" class="mt-4 font-sans font-14" style="display: none;">
           Pendaftaran karir sebagai Aparatur Sipil Negara dilakukan dalam format seleksi nasional. Untuk Pegawai Negeri
           Sipil akan diumumkan penerimaan Calon Pegawai Negeri Sipil (CPNS) yang dilakukan untuk seluruh instansi
           pemerintahan di Indonesia, termasuk di Kementerian Kominfo. Sementara untuk Pegawai Pemerintah dengan
@@ -79,7 +79,7 @@
             <i class="fa-solid fa-chevron-down text-gray-500"></i>
           </div>
         </div>
-        <div id="content-faq-2" class="mt-4 hidden font-sans font-14">
+        <div id="content-faq-2" class="mt-4 font-sans font-14" style="display: none;">
           Kami terbuka dan menyambut baik keinginan mahasiswa dari seluruh jurusan untuk dapat melakukan kegiatan magang
           di Kementerian Kominfo. Untuk prosedur pengajuan kegiatan magang, Anda dapat melakukan konsultasi dengan Biro
           Kepegawaian dan Organisasi melalui nomor telepon 021-3440858
@@ -97,7 +97,7 @@
             <i class="fa-solid fa-chevron-down text-gray-500"></i>
           </div>
         </div>
-        <div id="content-faq-3" class="mt-4 hidden font-sans font-14">
+        <div id="content-faq-3" class="mt-4 font-sans font-14" style="display: none;">
           Kami menerima kelompok siswa dan mahasiswa dengan didampingi guru atau dosen pendamping dalam kunjungan studi
           kerja lapangan. Untuk pengajuan kunjungan berkaitan dengan kepentingan studi, dapat melakukan konsultasi
           dengan Biro Hubungan Masyarakat di nomor telepon 021-3504024 atau email ke humas@mail.kominfo.go.id
@@ -114,7 +114,7 @@
             <i class="fa-solid fa-chevron-down text-gray-500"></i>
           </div>
         </div>
-        <div id="content-faq-4" class="mt-4 hidden font-sans font-14">
+        <div id="content-faq-4" class="mt-4 font-sans font-14" style="display: none;">
           Jika Anda memiliki permohonan pembiayaan acara/kegiatan yang berkaitan dengan program kerja tertentu, Anda
           dapat berkoordinasi dengan unit kerja yang berhubungan dengan bidang tersebut. Namun secara umum, Kementerian
           Kominfo tidak menerima pembiayaan acara/kegiatan selain yang telah dianggarkan pada Anggaran Pendapatan dan
@@ -132,7 +132,7 @@
             <i class="fa-solid fa-chevron-down text-gray-500"></i>
           </div>
         </div>
-        <div id="content-faq-5" class="mt-4 hidden font-sans font-14">
+        <div id="content-faq-5" class="mt-4 font-sans font-14" style="display: none;">
           Kementerian Kominfo membuka kesempatan dan menyediakan Beasiswa Pendidikan S2 Luar Negeri bagi PNS di
           Kementerian dan Lembaga Pemerintah Pusat dan Daerah (di luar sektor pendidikan), PNS di lingkungan TNI/POLRI,
           serta karyawan swasta yang bekerja di bidang industri komunikasi dan informatika. Persyaratan dan jurusan yang
@@ -151,7 +151,7 @@
             <i class="fa-solid fa-chevron-down text-gray-500"></i>
           </div>
         </div>
-        <div id="content-faq-6" class="mt-4 hidden font-sans font-14">
+        <div id="content-faq-6" class="mt-4 font-sans font-14" style="display: none;">
           Data yang dimiliki oleh Kementerian Kominfo sebagian besar dapat diakses melalui laman <span
             class="text-red-500">statistik.kominfo.go.id</span> serta melalui Publikasi Kementerian Kominfo di portal
           <span class="text-red-500">eppid.kominfo.go.id.</span>
@@ -266,7 +266,20 @@
     </div>
   </div>
   <script src="https://kit.fontawesome.com/a31ce59b43.js" crossorigin="anonymous"></script>
-  <script src="/scripts/faq.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    function expandCollapse(titleId, contentId){
+      var content = $("#" + contentId);
+      var title = $("#" + titleId);
+      if (content.css("display") === "none" || content.css("display") === '') {
+        content.slideDown();
+        title.addClass("text-primary");
+      } else {
+        content.slideUp();
+        title.removeClass("text-primary");
+      }
+    }
+  </script>
 </body>
 
 </html>
