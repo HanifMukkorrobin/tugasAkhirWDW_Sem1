@@ -1,27 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("panel-laporan").addEventListener("click", function () {
-    var contentLaporan = document.getElementById("content-laporan");
-    contentLaporan.classList.remove("hidden");
-    if (contentLaporan.style.display === "none" || contentLaporan.style.display === '') {
-      contentLaporan.style.display = "block";
-    } else {
-      contentLaporan.style.display = "none";
-    }
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("panel-statistik").addEventListener("click", function () {
-    var contentStatistik = document.getElementById("content-statistik");
-    contentStatistik.classList.remove("hidden");
-    if (contentStatistik.style.display === "none" || contentStatistik.style.display === '') {
-      contentStatistik.style.display = "block";
-    } else {
-      contentStatistik.style.display = "none";
-    }
-  });
-});
-
 Highcharts.chart("chartStatistikKonten", {
   chart: {
     type: "column",

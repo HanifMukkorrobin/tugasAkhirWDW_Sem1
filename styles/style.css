@@ -31,13 +31,13 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 
 .home-blue-filter {
   background: linear-gradient(to bottom, rgba(2, 81, 152, 0.4) 75%, rgb(255, 255, 255) 25%);
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 
